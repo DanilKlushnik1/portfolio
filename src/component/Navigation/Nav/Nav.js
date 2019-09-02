@@ -3,8 +3,8 @@ import './Nav.css'
 
 const Nav = (props) => {
     return (
-            <li>
-                <a href="{props.href}" >
+            <li className = "Nav">
+                <a href="{props.href}"  className = "href">
                 {props.children}</a>
             </li>
     )
