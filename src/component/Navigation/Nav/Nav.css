@@ -1,0 +1,27 @@
+li {
+    list-style-type: none;
+    display:inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-right: solid black 2px;
+    border-left: solid black 2px;
+  }
+  
+  a {
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+    transition: 0.4s ease-in-out;
+    padding-left: 2px;
+  
+  }
+  
+  a:hover{
+    color:red;
+  }
+  
+  li:hover{
+    border-right:solid red 2px;
+    border-left: solid red 2px;
+    color:red;
+  }
