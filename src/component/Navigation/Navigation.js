@@ -1,18 +1,17 @@
 import React from 'react';
 
-import Nav from './Nav/Nav'
+import Nav from './Nav/Nav';
+import classes from './Navigation.css'
 
 const Navigations = (props) => {
     return (
-        <div>
-            <ul>
-                <Nav>Home</Nav>
-                <Nav>For me</Nav>
-                <Nav>Me skill</Nav>
-                <Nav>My projects</Nav>
-                <Nav>Contact</Nav>
+            <ul className = {classes.back}>
+                <Nav link = "/" exact>Home</Nav>
+                <Nav link = "/Summary">Summary</Nav>
+                <Nav link = "/Skill">My skills</Nav>
+                <Nav link = "/Project">My projects</Nav>
+                <Nav link = "/Contact">Contacts</Nav>
             </ul>
-        </div>
     )
 }
 

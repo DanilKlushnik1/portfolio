@@ -1,11 +1,16 @@
 import React from 'react';
-import './Nav.css'
+import {NavLink} from 'react-router-dom';
+
+import classes from './Nav.css';
 
 const Nav = (props) => {
     return (
             <li className = "Nav">
-                <a href="{props.href}"  className = "href">
-                {props.children}</a>
+                <NavLink
+                    to = {props.link}
+                    exact = {props.exact}
+                    activeClassName = {classes.href}>
+                {props.children}</NavLink>
             </li>
     )
 }

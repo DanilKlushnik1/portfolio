@@ -1,27 +1,23 @@
 .Nav {
-    list-style-type: none;
-    display:inline-block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-right: solid black 2px;
-    border-left: solid black 2px;
-  }
-  
-.href {
-    font-size: 40px;
-    text-decoration: none;
-    color: black;
-    transition: 0.4s ease-in-out;
-    padding-left: 2px;
-  
-  }
-  
-  .href:hover{
-    color:red;
-  }
-  
-.Nav:hover{
-    border-right:solid red 2px;
-    border-left: solid red 2px;
-    color:red;
-  }
+  list-style-type: none;
+  display:inline-block;
+  padding-bottom: 10px;
+  padding: 0 15px;
+}
+
+.Nav a{
+  font-size: 40px;
+  text-decoration: none;
+  color: black;
+  transition: 0.4s ease-in-out;
+  padding-left: 2px;
+  font-family: 'Chilanka', cursive;
+}
+
+.Nav a:hover{
+  color:red;
+}
+
+.Nav + .Nav{
+padding-left: 25px;
+}
